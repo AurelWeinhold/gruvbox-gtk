@@ -709,26 +709,22 @@ entry, menuitem entry, popover.background entry, .osd entry,
   entry:disabled, popover.background entry:disabled,
   #XfceNotifyWindow entry:disabled, #login_window entry:disabled {
     box-shadow: none; }
-  entry progress, popover.background entry progress, .osd entry progress,
-  #XfceNotifyWindow entry progress, #login_window entry progress {
+  entry progress, popover.background entry progress, .osd entry progress, #XfceNotifyWindow entry progress, #login_window entry progress {
     background-color: #83a598;
     background-image: none;
     border-width: 0;
     border-radius: 6px;
     color: #1d2021; }
-  entry image.left,
-  #XfceNotifyWindow entry image.left, #login_window entry image.left {
+  entry image.left, #XfceNotifyWindow entry image.left, #login_window entry image.left {
     padding-right: 3px; }
-  entry image.right,
-  #XfceNotifyWindow entry image.right, #login_window entry image.right {
+  entry image.right, #XfceNotifyWindow entry image.right, #login_window entry image.right {
     padding-left: 3px; }
   entry.warning, popover.background entry.warning,
   #XfceNotifyWindow entry.warning, #login_window entry.warning {
     color: #fff;
     border-color: #bf5600;
     background-color: mix(#ebdbb2,#ef6c00,0.6); }
-    entry.warning image,
-    #XfceNotifyWindow entry.warning image, #login_window entry.warning image {
+    entry.warning image, #XfceNotifyWindow entry.warning image, #login_window entry.warning image {
       color: #fff; }
     entry.warning:focus,
     #XfceNotifyWindow entry.warning:focus, #login_window entry.warning:focus {
@@ -736,8 +732,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #ef6c00;
       box-shadow: none; }
-    entry.warning selection,
-    #XfceNotifyWindow entry.warning selection, #login_window entry.warning selection {
+    entry.warning selection, #XfceNotifyWindow entry.warning selection, #login_window entry.warning selection {
       background-color: #fff;
       color: #ef6c00; }
   entry.error, popover.background entry.error,
@@ -745,8 +740,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     color: #fff;
     border-color: #e21b0c;
     background-color: mix(#ebdbb2,#f44336,0.6); }
-    entry.error image,
-    #XfceNotifyWindow entry.error image, #login_window entry.error image {
+    entry.error image, #XfceNotifyWindow entry.error image, #login_window entry.error image {
       color: #fff; }
     entry.error:focus,
     #XfceNotifyWindow entry.error:focus, #login_window entry.error:focus {
@@ -754,8 +748,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #f44336;
       box-shadow: none; }
-    entry.error selection,
-    #XfceNotifyWindow entry.error selection, #login_window entry.error selection {
+    entry.error selection, #XfceNotifyWindow entry.error selection, #login_window entry.error selection {
       background-color: #fff;
       color: #f44336; }
   entry.search-missing, popover.background entry.search-missing,
@@ -763,8 +756,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     color: #fff;
     border-color: #e21b0c;
     background-color: mix(#ebdbb2,#f44336,0.6); }
-    entry.search-missing image,
-    #XfceNotifyWindow entry.search-missing image, #login_window entry.search-missing image {
+    entry.search-missing image, #XfceNotifyWindow entry.search-missing image, #login_window entry.search-missing image {
       color: #fff; }
     entry.search-missing:focus,
     #XfceNotifyWindow entry.search-missing:focus, #login_window entry.search-missing:focus {
@@ -772,8 +764,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #f44336;
       box-shadow: none; }
-    entry.search-missing selection,
-    #XfceNotifyWindow entry.search-missing selection, #login_window entry.search-missing selection {
+    entry.search-missing selection, #XfceNotifyWindow entry.search-missing selection, #login_window entry.search-missing selection {
       background-color: #fff;
       color: #f44336; }
 
@@ -838,7 +829,10 @@ toolbar {
 headerbar {
   border-width: 0 0 1px;
   border-style: solid; }
-  headerbar entry, headerbar spinbutton, headerbar separator, headerbar button {
+  headerbar entry,
+  headerbar spinbutton,
+  headerbar separator,
+  headerbar button {
     margin-top: 6px;
     margin-bottom: 6px; }
   headerbar switch {
@@ -1611,13 +1605,11 @@ searchbar,
     color: #1d2021;
     box-shadow: none; }
   .suggested-action.separator, headerbar.selection-mode button.separator.suggested-action,
-  .titlebar:not(headerbar).selection-mode button.separator.suggested-action, .suggested-action .separator, headerbar.selection-mode button.suggested-action .separator,
-  .titlebar:not(headerbar).selection-mode button.suggested-action .separator {
+  .titlebar:not(headerbar).selection-mode button.separator.suggested-action, .suggested-action .separator, headerbar.selection-mode button.suggested-action .separator, .titlebar:not(headerbar).selection-mode button.suggested-action .separator {
     border: 1px solid currentColor;
     color: rgba(76, 175, 80, 0.9); }
     .suggested-action.separator:disabled,
-    .titlebar:not(headerbar).selection-mode button.separator.suggested-action:disabled, .suggested-action .separator:disabled,
-    .titlebar:not(headerbar).selection-mode button.suggested-action .separator:disabled {
+    .titlebar:not(headerbar).selection-mode button.separator.suggested-action:disabled, .suggested-action .separator:disabled, .titlebar:not(headerbar).selection-mode button.suggested-action .separator:disabled {
       color: rgba(76, 175, 80, 0.85); }
 
 .destructive-action {
@@ -2420,9 +2412,7 @@ headerbar.selection-mode,
       -gtk-icon-shadow: none; }
   headerbar.selection-mode .dim-label, headerbar.selection-mode label.separator, .selection-menu headerbar.selection-mode .dim-label, .selection-menu headerbar.selection-mode label.separator,
   .titlebar:not(headerbar).selection-mode .dim-label,
-  .titlebar:not(headerbar).selection-mode label.separator, .selection-menu
-  .titlebar:not(headerbar).selection-mode .dim-label, .selection-menu
-  .titlebar:not(headerbar).selection-mode label.separator {
+  .titlebar:not(headerbar).selection-mode label.separator, .selection-menu .titlebar:not(headerbar).selection-mode .dim-label, .selection-menu .titlebar:not(headerbar).selection-mode label.separator {
     color: #57786b; }
 
 /**********
@@ -3132,26 +3122,22 @@ entry, menuitem entry, popover.background entry, .osd entry,
   entry:disabled, popover.background entry:disabled,
   #XfceNotifyWindow entry:disabled, #login_window entry:disabled {
     box-shadow: none; }
-  entry progress, popover.background entry progress, .osd entry progress,
-  #XfceNotifyWindow entry progress, #login_window entry progress {
+  entry progress, popover.background entry progress, .osd entry progress, #XfceNotifyWindow entry progress, #login_window entry progress {
     background-color: #83a598;
     background-image: none;
     border-width: 0;
     border-radius: 6px;
     color: #1d2021; }
-  entry image.left,
-  #XfceNotifyWindow entry image.left, #login_window entry image.left {
+  entry image.left, #XfceNotifyWindow entry image.left, #login_window entry image.left {
     padding-right: 3px; }
-  entry image.right,
-  #XfceNotifyWindow entry image.right, #login_window entry image.right {
+  entry image.right, #XfceNotifyWindow entry image.right, #login_window entry image.right {
     padding-left: 3px; }
   entry.warning, popover.background entry.warning,
   #XfceNotifyWindow entry.warning, #login_window entry.warning {
     color: #fff;
     border-color: #bf5600;
     background-color: mix(#ebdbb2,#ef6c00,0.6); }
-    entry.warning image,
-    #XfceNotifyWindow entry.warning image, #login_window entry.warning image {
+    entry.warning image, #XfceNotifyWindow entry.warning image, #login_window entry.warning image {
       color: #fff; }
     entry.warning:focus,
     #XfceNotifyWindow entry.warning:focus, #login_window entry.warning:focus {
@@ -3159,8 +3145,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #ef6c00;
       box-shadow: none; }
-    entry.warning selection,
-    #XfceNotifyWindow entry.warning selection, #login_window entry.warning selection {
+    entry.warning selection, #XfceNotifyWindow entry.warning selection, #login_window entry.warning selection {
       background-color: #fff;
       color: #ef6c00; }
   entry.error, popover.background entry.error,
@@ -3168,8 +3153,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     color: #fff;
     border-color: #e21b0c;
     background-color: mix(#ebdbb2,#f44336,0.6); }
-    entry.error image,
-    #XfceNotifyWindow entry.error image, #login_window entry.error image {
+    entry.error image, #XfceNotifyWindow entry.error image, #login_window entry.error image {
       color: #fff; }
     entry.error:focus,
     #XfceNotifyWindow entry.error:focus, #login_window entry.error:focus {
@@ -3177,8 +3161,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #f44336;
       box-shadow: none; }
-    entry.error selection,
-    #XfceNotifyWindow entry.error selection, #login_window entry.error selection {
+    entry.error selection, #XfceNotifyWindow entry.error selection, #login_window entry.error selection {
       background-color: #fff;
       color: #f44336; }
   entry.search-missing, popover.background entry.search-missing,
@@ -3186,8 +3169,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     color: #fff;
     border-color: #e21b0c;
     background-color: mix(#ebdbb2,#f44336,0.6); }
-    entry.search-missing image,
-    #XfceNotifyWindow entry.search-missing image, #login_window entry.search-missing image {
+    entry.search-missing image, #XfceNotifyWindow entry.search-missing image, #login_window entry.search-missing image {
       color: #fff; }
     entry.search-missing:focus,
     #XfceNotifyWindow entry.search-missing:focus, #login_window entry.search-missing:focus {
@@ -3195,8 +3177,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
       border-color: #527065;
       background-color: #f44336;
       box-shadow: none; }
-    entry.search-missing selection,
-    #XfceNotifyWindow entry.search-missing selection, #login_window entry.search-missing selection {
+    entry.search-missing selection, #XfceNotifyWindow entry.search-missing selection, #login_window entry.search-missing selection {
       background-color: #fff;
       color: #f44336; }
 
@@ -4009,8 +3990,7 @@ stackswitcher button.circular, stackswitcher button.nautilus-circular-button.ima
 /*******************
  ! Selected Items  *
 ********************/
-entry selection, menuitem entry selection, popover.background entry selection, .osd entry selection,
-#XfceNotifyWindow entry selection, #login_window entry selection, calendar:selected, row:selected, flowbox flowboxchild:selected, modelbutton.flat:active, modelbutton.flat:active arrow, modelbutton.flat:selected, modelbutton.flat:selected arrow,
+entry selection, menuitem entry selection, popover.background entry selection, .osd entry selection, #XfceNotifyWindow entry selection, #login_window entry selection, calendar:selected, row:selected, flowbox flowboxchild:selected, modelbutton.flat:active, modelbutton.flat:active arrow, modelbutton.flat:selected, modelbutton.flat:selected arrow,
 menuitem.button.flat:active,
 menuitem.button.flat:active arrow,
 menuitem.button.flat:selected,
@@ -4020,8 +4000,7 @@ textview text:selected, .view text selection:focus, iconview text selection:focu
 textview text selection:focus,
 textview text selection, treeview.view:selected:focus, treeview.view:selected, .cs-category-view:selected:focus, .cs-category-view:selected, .cs-category-view .view:selected:focus, .cs-category-view iconview:selected:focus, .cs-category-view .view:selected, .cs-category-view iconview:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview.view:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview.view:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:selected, .nemo-window .sidebar .nemo-places-sidebar .view:selected:focus, .nemo-window .sidebar .nemo-places-sidebar iconview:selected:focus, .nemo-window .sidebar .nemo-places-sidebar .view:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:selected {
   background-color: #83a598; }
-  row:selected label, label:selected, entry selection, menuitem entry selection, popover.background entry selection, .osd entry selection,
-  #XfceNotifyWindow entry selection, #login_window entry selection, calendar:selected, row:selected, flowbox flowboxchild:selected, modelbutton.flat:active, modelbutton.flat:active arrow, modelbutton.flat:selected, modelbutton.flat:selected arrow,
+  row:selected label, label:selected, entry selection, menuitem entry selection, popover.background entry selection, .osd entry selection, #XfceNotifyWindow entry selection, #login_window entry selection, calendar:selected, row:selected, flowbox flowboxchild:selected, modelbutton.flat:active, modelbutton.flat:active arrow, modelbutton.flat:selected, modelbutton.flat:selected arrow,
   menuitem.button.flat:active,
   menuitem.button.flat:active arrow,
   menuitem.button.flat:selected,
@@ -4031,8 +4010,7 @@ textview text selection, treeview.view:selected:focus, treeview.view:selected, .
   textview text selection:focus,
   textview text selection, treeview.view:selected:focus, treeview.view:selected, .cs-category-view:selected:focus, .cs-category-view:selected, .cs-category-view .view:selected:focus, .cs-category-view iconview:selected:focus, .cs-category-view .view:selected, .cs-category-view iconview:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview.view:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview.view:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:selected, .nemo-window .sidebar .nemo-places-sidebar .view:selected:focus, .nemo-window .sidebar .nemo-places-sidebar iconview:selected:focus, .nemo-window .sidebar .nemo-places-sidebar .view:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:selected {
     color: #1d2021; }
-    row:selected label:disabled, label:disabled:selected, label:disabled selection, entry selection:disabled,
-    #XfceNotifyWindow entry selection:disabled, #login_window entry selection:disabled, calendar:disabled:selected, row:disabled:selected, flowbox flowboxchild:disabled:selected, modelbutton.flat:disabled:active, modelbutton.flat:active arrow:disabled, modelbutton.flat:disabled:selected, modelbutton.flat:selected arrow:disabled,
+    row:selected label:disabled, label:disabled:selected, label:disabled selection, entry selection:disabled, #XfceNotifyWindow entry selection:disabled, #login_window entry selection:disabled, calendar:disabled:selected, row:disabled:selected, flowbox flowboxchild:disabled:selected, modelbutton.flat:disabled:active, modelbutton.flat:active arrow:disabled, modelbutton.flat:disabled:selected, modelbutton.flat:selected arrow:disabled,
     menuitem.button.flat:disabled:active,
     menuitem.button.flat:active arrow:disabled,
     menuitem.button.flat:disabled:selected,
@@ -4041,8 +4019,7 @@ textview text selection, treeview.view:selected:focus, treeview.view:selected, .
     textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
     textview text selection:disabled, .cs-category-view:disabled:selected, .cs-category-view iconview:disabled:selected:focus, .cs-category-view iconview:disabled:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:disabled:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:disabled:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:disabled:selected:focus, .nemo-window .sidebar .nemo-places-sidebar .view:disabled:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:disabled:selected {
       color: mix(#1d2021,#83a598,0.5); }
-    row:selected label:backdrop, label:backdrop:selected, label:backdrop selection, entry selection:backdrop,
-    #XfceNotifyWindow entry selection:backdrop, #login_window entry selection:backdrop, calendar:backdrop:selected, row:backdrop:selected, flowbox flowboxchild:backdrop:selected, modelbutton.flat:backdrop:active, modelbutton.flat:active arrow:backdrop, modelbutton.flat:backdrop:selected, modelbutton.flat:selected arrow:backdrop,
+    row:selected label:backdrop, label:backdrop:selected, label:backdrop selection, entry selection:backdrop, #XfceNotifyWindow entry selection:backdrop, #login_window entry selection:backdrop, calendar:backdrop:selected, row:backdrop:selected, flowbox flowboxchild:backdrop:selected, modelbutton.flat:backdrop:active, modelbutton.flat:active arrow:backdrop, modelbutton.flat:backdrop:selected, modelbutton.flat:selected arrow:backdrop,
     menuitem.button.flat:backdrop:active,
     menuitem.button.flat:active arrow:backdrop,
     menuitem.button.flat:backdrop:selected,
@@ -4052,8 +4029,7 @@ textview text selection, treeview.view:selected:focus, treeview.view:selected, .
     textview text selection:backdrop, .cs-category-view:backdrop:selected, .cs-category-view iconview:backdrop:selected:focus, .cs-category-view iconview:backdrop:selected, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:backdrop:selected:focus, .background:not(.csd):not(.solid-csd) > box.vertical > notebook.frame > stack > scrolledwindow > viewport > box.vertical > frame > box.vertical iconview:backdrop:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:backdrop:selected:focus, .nemo-window .sidebar .nemo-places-sidebar .view:backdrop:selected, .nemo-window .sidebar .nemo-places-sidebar iconview:backdrop:selected {
       background-color: #83a598;
       color: mix(#83a598,#1d2021,0.66); }
-      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, entry selection:backdrop:disabled,
-      #XfceNotifyWindow entry selection:backdrop:disabled, #login_window entry selection:backdrop:disabled, calendar:backdrop:disabled:selected, row:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, modelbutton.flat:backdrop:disabled:active, modelbutton.flat:active arrow:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected, modelbutton.flat:selected arrow:backdrop:disabled,
+      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, entry selection:backdrop:disabled, #XfceNotifyWindow entry selection:backdrop:disabled, #login_window entry selection:backdrop:disabled, calendar:backdrop:disabled:selected, row:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, modelbutton.flat:backdrop:disabled:active, modelbutton.flat:active arrow:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected, modelbutton.flat:selected arrow:backdrop:disabled,
       menuitem.button.flat:backdrop:disabled:active,
       menuitem.button.flat:active arrow:backdrop:disabled,
       menuitem.button.flat:backdrop:disabled:selected,
